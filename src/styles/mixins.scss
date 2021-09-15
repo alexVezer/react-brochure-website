@@ -1,0 +1,13 @@
+@mixin photoDisplay{
+  
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin FlexCenter($direction) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+}

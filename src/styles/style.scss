@@ -1,0 +1,111 @@
+@import './variables.scss';
+@import './mixins.scss';
+@import './base.scss';
+
+.container {
+    @include FlexCenter(row);
+}
+
+section {
+    max-width: 70%;
+}
+
+#section-A {
+    @include FlexCenter(column);
+    background: transparent;
+    position: absolute;
+    top: 40%;
+}
+
+#section-C {
+    @include FlexCenter(column);
+    background: red;
+
+}
+
+
+.background {
+    position: relative;
+    background-image: url(./background.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+#out {
+    height: 60vh;
+    position: relative;
+}
+
+.box {
+    background-color: var(--primary--color);
+    box-shadow: 10px 5px 5px var(--secondary--color);
+    padding: 1.7em;
+    border: solid 1px var(--secondary--color);
+    opacity: 0.8;
+    color: var(--text--color);
+}
+
+.out {
+    position: absolute;
+    bottom: 40%;
+    width: 70vw;
+    text-align: justify;
+    opacity: 1;
+}
+
+.outBtn {
+    z-index: 3;
+    position: absolute;
+    bottom: 35%;
+}
+
+.logo {
+    width: 200px;
+    text-align: center;
+    color: var(--text--color);
+    font-weight: 300;
+    font-size: 2em;
+    z-index: 3;
+    position: relative;
+    top: 10px;
+    padding: 0.7em;
+}
+
+.intro {
+    width: 70vw;
+    text-align: justify;
+    opacity: 1;
+
+}
+
+.introBtn {
+    z-index: 3;
+    position: relative;
+    top: -20px;
+}
+
+// Card styles
+
+#section-B {
+    max-width: 90%;
+    //@include FlexCenter(row);
+}
+
+.myCard {
+    width: 20vw;
+    display: inline-block;
+    margin: 10px;
+}
+
+.cardImg {
+    max-width: 200px;
+    object-fit: cover;
+}
+
+footer {
+    @include FlexCenter(column);
+}
