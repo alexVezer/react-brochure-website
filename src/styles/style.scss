@@ -42,27 +42,21 @@ section {
 
 .box {
     background-color: var(--primary--color);
-    box-shadow: 10px 5px 5px var(--secondary--color);
-    padding: 1.7em;
     border: solid 1px var(--secondary--color);
-    opacity: 0.8;
     color: var(--text--color);
+    box-shadow: 10px 5px 5px var(--secondary--color);
+    opacity: 0.8;
+    button:hover {
+        background-color: var(--dark--green);
+        border: solid 1px var(--dark--green);
+        color: var(--green--accent);        
+    }
 }
 
-.out {
-    position: absolute;
-    bottom: 40%;
-    width: 70vw;
-    text-align: justify;
-    opacity: 1;
-}
+.padd {
+    padding: 3em;
 
-.outBtn {
-    z-index: 3;
-    position: absolute;
-    bottom: 35%;
 }
-
 .logo {
     width: 200px;
     text-align: center;
@@ -75,6 +69,32 @@ section {
     padding: 0.7em;
 }
 
+.out {
+    position: absolute;
+    bottom: 40%;
+    width: 70vw;
+    text-align: justify;
+    opacity: 1;
+}
+
+.Btn {
+    z-index: 3;
+    font-weight: 500;
+    font-size:1.5em;
+    padding:0.8em;    
+    &:hover {
+        background-color: var(--dark--green);
+        border: solid 1px var(--dark--green);
+        color: var(--green--accent);        
+    }
+}
+
+#outBtn {
+    position: absolute;
+    bottom: 35%;
+}
+
+
 .intro {
     width: 70vw;
     text-align: justify;
@@ -82,17 +102,18 @@ section {
 
 }
 
-.introBtn {
-    z-index: 3;
+#introBtn {
     position: relative;
     top: -20px;
 }
+
 
 // Card styles
 
 #section-B {
     max-width: 90%;
     //@include FlexCenter(row);
+    
 }
 
 .myCard {
@@ -102,10 +123,41 @@ section {
 }
 
 .cardImg {
-    max-width: 200px;
+    max-width: 300px;
     object-fit: cover;
 }
 
+// Footer styles
+
 footer {
     @include FlexCenter(column);
+}
+
+a {
+    text-decoration:none;
+    font-weight: 200;
+    line-height: 1.8em;
+    color: var(--text--color);
+    padding: 1em 0.3em;
+    &:hover {
+        color: var(--dark--green);
+
+    }
+}
+
+.socialM {
+    font-size: 2.5em;
+    // position:relative;
+    // top:-0.5em;
+    // text-shadow: 10px 5px 5px var(--secondary--color);
+}
+
+ul{
+    margin: 0;
+    padding:0;
+}
+li{
+    padding: 0.8em;
+    list-style: none;
+    border-bottom: 0.5px solid var(--dark--green);
 }

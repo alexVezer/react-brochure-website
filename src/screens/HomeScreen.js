@@ -17,8 +17,8 @@ const HomeScreen = () => {
         <Container>
         <section id='section-A'>
         <Box content='Logo' cls='logo'/>
-        <Box content={intro} cls='intro'/>
-        <Button className='box introBtn' onClick={onClickHandler}>See our work</Button>
+        <Box content={intro} cls='intro padd'/>
+        <Button className='box Btn' id='introBtn' onClick={onClickHandler}>See our work</Button>
          </section> 
 
          <section id='section-B'>
@@ -44,8 +44,8 @@ const HomeScreen = () => {
          <Container>  
         
          <section id='section-C'>
-            <Box content={out} cls='out'/>
-            <Button className='box outBtn' onClick={onClickHandler}>Contacteaza-ne!</Button>
+            <Box content={out} cls='out padd'/>
+            <Button className='box Btn' id='outBtn' onClick={onClickHandler}>Contacteaza-ne!</Button>
          </section>
          
          </Container> 

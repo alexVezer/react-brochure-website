@@ -25,14 +25,6 @@ body, html {
   background-color: var(--green--accent);
 }
 
-.link {
-  text-decoration: none;
-  font-weight: 200;
-  line-height: 1.8em;
-  color: var(--text--color);
-  padding: 1em;
-}
-
 .container {
   display: flex;
   flex-direction: row;
@@ -80,25 +72,19 @@ section {
 
 .box {
   background-color: var(--primary--color);
-  box-shadow: 10px 5px 5px var(--secondary--color);
-  padding: 1.7em;
   border: solid 1px var(--secondary--color);
-  opacity: 0.8;
   color: var(--text--color);
+  box-shadow: 10px 5px 5px var(--secondary--color);
+  opacity: 0.8;
+}
+.box button:hover {
+  background-color: var(--dark--green);
+  border: solid 1px var(--dark--green);
+  color: var(--green--accent);
 }
 
-.out {
-  position: absolute;
-  bottom: 40%;
-  width: 70vw;
-  text-align: justify;
-  opacity: 1;
-}
-
-.outBtn {
-  z-index: 3;
-  position: absolute;
-  bottom: 35%;
+.padd {
+  padding: 3em;
 }
 
 .logo {
@@ -113,14 +99,38 @@ section {
   padding: 0.7em;
 }
 
+.out {
+  position: absolute;
+  bottom: 40%;
+  width: 70vw;
+  text-align: justify;
+  opacity: 1;
+}
+
+.Btn {
+  z-index: 3;
+  font-weight: 500;
+  font-size: 1.5em;
+  padding: 0.8em;
+}
+.Btn:hover {
+  background-color: var(--dark--green);
+  border: solid 1px var(--dark--green);
+  color: var(--green--accent);
+}
+
+#outBtn {
+  position: absolute;
+  bottom: 35%;
+}
+
 .intro {
   width: 70vw;
   text-align: justify;
   opacity: 1;
 }
 
-.introBtn {
-  z-index: 3;
+#introBtn {
   position: relative;
   top: -20px;
 }
@@ -136,7 +146,7 @@ section {
 }
 
 .cardImg {
-  max-width: 200px;
+  max-width: 300px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -146,4 +156,30 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 200;
+  line-height: 1.8em;
+  color: var(--text--color);
+  padding: 1em 0.3em;
+}
+a:hover {
+  color: var(--dark--green);
+}
+
+.socialM {
+  font-size: 2.5em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 0.8em;
+  list-style: none;
+  border-bottom: 0.5px solid var(--dark--green);
 }/*# sourceMappingURL=style.css.map */
