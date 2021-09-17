@@ -6,6 +6,10 @@
     @include FlexCenter(row);
 }
 
+.nBar{
+    padding-top: 0;
+    padding-bottom: 0;
+}
 section {
     max-width: 70%;
 }
@@ -55,7 +59,10 @@ section {
 
 .padd {
     padding: 3em;
+}
 
+.paddT{
+    padding: 3em 0;
 }
 .logo {
     width: 200px;
@@ -118,8 +125,9 @@ section {
 
 .myCard {
     width: 20vw;
-    display: inline-block;
+    // display: inline-block;
     margin: 10px;
+    @include FlexCenter(row);
 }
 
 .cardImg {
@@ -127,6 +135,13 @@ section {
     object-fit: cover;
 }
 
+.cardBtn {
+    align-items: center;
+    position: relative;
+    top: -15px;
+    left: 20%;
+    
+}
 // Footer styles
 
 footer {
@@ -136,9 +151,9 @@ footer {
 a {
     text-decoration:none;
     font-weight: 200;
-    line-height: 1.8em;
+    line-height: 1.2em;
     color: var(--text--color);
-    padding: 1em 0.3em;
+    padding: 0.3em 0.8em;
     &:hover {
         color: var(--dark--green);
 
@@ -152,12 +167,56 @@ a {
     // text-shadow: 10px 5px 5px var(--secondary--color);
 }
 
+// Contact Page 
+
+.contact {
+    @include FlexCenter(row);
+}
+
 ul{
+    position: relative;
+    left: 40px;
+    z-index:5;
     margin: 0;
     padding:0;
 }
+
 li{
     padding: 0.8em;
     list-style: none;
     border-bottom: 0.5px solid var(--dark--green);
 }
+
+// Gallery
+
+// .gallery {
+
+// }
+.galItem {
+    background: transparent;
+    @include FlexCenter(row);
+    z-index: 10;
+    .galDesc{
+        width:70%;
+        padding: 2em;
+        position: relative;
+        left:-60px;
+        h4{
+            float: right;
+        }
+    }
+
+    .galImg {
+        width: 400px;
+        object-fit: cover;
+    }
+
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+        .galDesc{
+            left: 160px;    
+        }
+    }
+}
+
+@import './madiaQueries.scss'; 

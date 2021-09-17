@@ -1,5 +1,5 @@
 :root {
-  --primary--color:#A68A64;
+  --primary--color:wheat;
   --secondary--color:#7F4F24;
   --text--color:#582F0E;
   --green--accent:#C2C5AA;
@@ -7,7 +7,7 @@
 }
 
 :root {
-  --primary--color:#A68A64;
+  --primary--color:wheat;
   --secondary--color:#7F4F24;
   --text--color:#582F0E;
   --green--accent:#C2C5AA;
@@ -25,11 +25,20 @@ body, html {
   background-color: var(--green--accent);
 }
 
+P {
+  text-align: justify;
+}
+
 .container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.nBar {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 section {
@@ -87,6 +96,10 @@ section {
   padding: 3em;
 }
 
+.paddT {
+  padding: 3em 0;
+}
+
 .logo {
   width: 200px;
   text-align: center;
@@ -141,14 +154,24 @@ section {
 
 .myCard {
   width: 20vw;
-  display: inline-block;
   margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .cardImg {
   max-width: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.cardBtn {
+  align-items: center;
+  position: relative;
+  top: -15px;
+  left: 20%;
 }
 
 footer {
@@ -161,9 +184,9 @@ footer {
 a {
   text-decoration: none;
   font-weight: 200;
-  line-height: 1.8em;
+  line-height: 1.2em;
   color: var(--text--color);
-  padding: 1em 0.3em;
+  padding: 0.3em 0.8em;
 }
 a:hover {
   color: var(--dark--green);
@@ -173,7 +196,17 @@ a:hover {
   font-size: 2.5em;
 }
 
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 ul {
+  position: relative;
+  left: 40px;
+  z-index: 5;
   margin: 0;
   padding: 0;
 }
@@ -182,4 +215,33 @@ li {
   padding: 0.8em;
   list-style: none;
   border-bottom: 0.5px solid var(--dark--green);
+}
+
+.galItem {
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.galItem .galDesc {
+  width: 70%;
+  padding: 2em;
+  position: relative;
+  left: -60px;
+}
+.galItem .galDesc h4 {
+  float: right;
+}
+.galItem .galImg {
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.galItem:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.galItem:nth-child(even) .galDesc {
+  left: 160px;
 }/*# sourceMappingURL=style.css.map */

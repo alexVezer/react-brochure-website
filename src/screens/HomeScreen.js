@@ -28,9 +28,8 @@ const HomeScreen = () => {
             <Card  key={card.title} className = 'box myCard'>
              <Card.Body>
                 <Card.Img variant='top' className='cardImg' src={card.image}/>
-                <Card.Title>{card.title}</Card.Title>
+                <Button className='box cardBtn'>{card.title}</Button>
                 <Card.Text>{card.desc}</Card.Text>
-                <Button className='box'> See more</Button>
                 
             </Card.Body>
             </Card>

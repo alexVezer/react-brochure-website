@@ -19,7 +19,56 @@ const data ={
             "image": "/images/img3.jpg"
         }
     ],
-
+    "photos": [
+        {
+            "id": 1,
+            "title": "Title 1",
+            "alt": "lorem ipsum",
+            "price":"$250.00",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis",
+            "link": "/images/img4.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Title 2",
+            "alt": "lorem ipsum",
+            "price":"$250.00",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis",
+            "link": "/images/img8.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Title 3",
+            "alt": "lorem ipsum",
+            "price":"$250.00",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis",
+            "link": "/images/img7.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Title 4",
+            "alt": "lorem ipsum",
+            "price":"$250.00",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis",
+            "link": "/images/img9.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Title 5",
+            "alt": "lorem ipsum",
+            "price":"$250.00",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis",
+            "link": "/images/img2.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Title 6",
+            "alt": "lorem ipsum",
+            "price":"$250.00",
+            "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc maximus, nulla ut commodo sagittis",
+            "link": "/images/img10.jpg"
+        }
+    ],
     
 }
 

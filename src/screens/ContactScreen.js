@@ -13,11 +13,13 @@ const ContactScreen = () => {
     return (
         <Fragment>
             <Header/>
-            <Container className='padd'>
+            <Container className='paddT'>
             <Row>
-            <Col>
             <h2>Contact</h2>
-            <ul className='box'>
+            </Row>
+            <Row className='contact'>
+            <Col>
+            <ul className='box adresa'>
             <li>
                 <h4>S.C. Logo S.R.L.</h4>
             </li>
@@ -36,8 +38,8 @@ const ContactScreen = () => {
             </ul>
             </Col>
             
-            <Col>
-            <h3>Ne gasesti aici: </h3>
+            <Col className='paddT'>
+            
             <Map/>
             </Col>
             </Row>
