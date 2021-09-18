@@ -36,6 +36,10 @@ P {
   justify-content: center;
 }
 
+#gallery {
+  max-width: 1000px;
+}
+
 .nBar {
   padding-top: 0;
   padding-bottom: 0;
@@ -218,6 +222,7 @@ li {
 }
 
 .galItem {
+  max-width: 840px;
   background: transparent;
   display: flex;
   flex-direction: row;
@@ -226,10 +231,10 @@ li {
   z-index: 10;
 }
 .galItem .galDesc {
-  width: 70%;
+  width: 100%;
   padding: 2em;
   position: relative;
-  left: -60px;
+  left: -80px;
 }
 .galItem .galDesc h4 {
   float: right;
@@ -243,5 +248,5 @@ li {
   flex-direction: row-reverse;
 }
 .galItem:nth-child(even) .galDesc {
-  left: 160px;
+  left: 100px;
 }/*# sourceMappingURL=style.css.map */

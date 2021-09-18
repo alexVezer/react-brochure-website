@@ -6,6 +6,10 @@
     @include FlexCenter(row);
 }
 
+#gallery {
+    max-width: 1000px;
+}
+
 .nBar{
     padding-top: 0;
     padding-bottom: 0;
@@ -193,14 +197,15 @@ li{
 
 // }
 .galItem {
+    max-width: 840px;
     background: transparent;
     @include FlexCenter(row);
     z-index: 10;
     .galDesc{
-        width:70%;
+        width:100%;
         padding: 2em;
         position: relative;
-        left:-60px;
+        left:-80px;
         h4{
             float: right;
         }
@@ -209,12 +214,13 @@ li{
     .galImg {
         width: 400px;
         object-fit: cover;
+    
     }
 
     &:nth-child(even) {
         flex-direction: row-reverse;
         .galDesc{
-            left: 160px;    
+            left: 100px;    
         }
     }
 }

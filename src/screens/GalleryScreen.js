@@ -10,8 +10,8 @@ const GalleryScreen = () => {
     return (
         <Fragment>
         <Header/>
-        <Container>   
-        <div className='gallery paddT'>
+        <Container >   
+        <div className='paddT' id='gallery'>
         {
                 photos.map( photo => (
                     <Row key={photo.id} className='paddT galItem'>
