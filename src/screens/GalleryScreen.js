@@ -6,6 +6,7 @@ import data from '../data/data.js'
 const GalleryScreen = () => {
     const {photos} = data
 
+    
 
     return (
         <Fragment>

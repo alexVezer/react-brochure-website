@@ -146,6 +146,23 @@ section {
     left: 20%;
     
 }
+
+// Page styles
+
+#page {
+    @include FlexCenter(column);
+    background: transparent;
+    position: absolute;
+    top: 40%;
+}
+.pageTitle {
+    padding:1em;
+    font-size: 2rem;
+    position: relative;
+    top:20px; 
+    z-index: 5;
+m
+}
 // Footer styles
 
 footer {
