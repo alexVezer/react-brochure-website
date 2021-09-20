@@ -10,10 +10,14 @@
     max-width: 1000px;
 }
 
-.nBar{
+.nBar {
     padding-top: 0;
     padding-bottom: 0;
+    a {
+        padding-right: 1em;
+    }
 }
+
 section {
     max-width: 70%;
 }
@@ -22,7 +26,7 @@ section {
     @include FlexCenter(column);
     background: transparent;
     position: absolute;
-    top: 40%;
+    top: 35%;
 }
 
 #section-C {
@@ -54,20 +58,29 @@ section {
     color: var(--text--color);
     box-shadow: 10px 5px 5px var(--secondary--color);
     opacity: 0.8;
-    button:hover {
-        background-color: var(--dark--green);
-        border: solid 1px var(--dark--green);
-        color: var(--green--accent);        
+
+    button {
+
+        &:hover {
+            background-color: var(--dark--green);
+            border: solid 1px var(--dark--green);
+            color: var(--green--accent);
+        }
+        // &::before, &::after {
+        //     color: rgb(211, 38, 38);//var(--dark--green);
+        // }
     }
+
 }
 
 .padd {
     padding: 3em;
 }
 
-.paddT{
+.paddT {
     padding: 3em 0;
 }
+
 .logo {
     width: 200px;
     text-align: center;
@@ -82,7 +95,7 @@ section {
 
 .out {
     position: absolute;
-    bottom: 40%;
+    bottom: 30%;
     width: 70vw;
     text-align: justify;
     opacity: 1;
@@ -91,18 +104,22 @@ section {
 .Btn {
     z-index: 3;
     font-weight: 500;
-    font-size:1.5em;
-    padding:0.8em;    
+    font-size: 1.5em;
+    padding: 0.8em;
+
     &:hover {
         background-color: var(--dark--green);
         border: solid 1px var(--dark--green);
-        color: var(--green--accent);        
+        color: var(--green--accent);
+    }
+    &:active, &:focus {
+        border-color: var(--dark--green);
     }
 }
 
 #outBtn {
     position: absolute;
-    bottom: 35%;
+    bottom: 22%;
 }
 
 
@@ -122,17 +139,22 @@ section {
 // Card styles
 
 #section-B {
-    max-width: 90%;
+    max-width: 100%;
     //@include FlexCenter(row);
-    
+
+}
+
+.card {
+    width: 20vw;
+    @include FlexCenter(column);
+    margin: 10px;
 }
 
 .myCard {
-    width: 20vw;
-    // display: inline-block;
     margin: 10px;
     @include FlexCenter(row);
 }
+
 
 .cardImg {
     max-width: 300px;
@@ -144,8 +166,8 @@ section {
     position: relative;
     top: -15px;
     left: 20%;
-    
 }
+
 
 // Page styles
 
@@ -155,37 +177,44 @@ section {
     position: absolute;
     top: 40%;
 }
+
 .pageTitle {
-    padding:1em;
+    padding: 1em;
     font-size: 2rem;
     position: relative;
-    top:20px; 
+    top: 20px;
     z-index: 5;
-m
+
 }
+
 // Footer styles
 
 footer {
     @include FlexCenter(column);
+
+}
+.fBar a {
+    padding: 0.3em 0.8em;
 }
 
 a {
-    text-decoration:none;
+    text-decoration: none;
     font-weight: 200;
     line-height: 1.2em;
     color: var(--text--color);
-    padding: 0.3em 0.8em;
+    padding: 0.1em;
     &:hover {
         color: var(--dark--green);
-
+        
+    }
+    &:active {
+        border-color: var(--dark--green);
     }
 }
 
 .socialM {
     font-size: 2.5em;
-    // position:relative;
-    // top:-0.5em;
-    // text-shadow: 10px 5px 5px var(--secondary--color);
+
 }
 
 // Contact Page 
@@ -194,15 +223,20 @@ a {
     @include FlexCenter(row);
 }
 
-ul{
-    position: relative;
-    left: 40px;
-    z-index:5;
-    margin: 0;
-    padding:0;
+.map {
+    height:55vh;
+    width: 45vw;
 }
 
-li{
+ul {
+    position: relative;
+    left: 40px;
+    z-index: 5;
+    margin: 0;
+    padding: 0;
+}
+
+li {
     padding: 0.8em;
     list-style: none;
     border-bottom: 0.5px solid var(--dark--green);
@@ -210,20 +244,19 @@ li{
 
 // Gallery
 
-// .gallery {
-
-// }
 .galItem {
     max-width: 840px;
     background: transparent;
     @include FlexCenter(row);
     z-index: 10;
-    .galDesc{
-        width:100%;
+
+    .galDesc {
+        width: 100%;
         padding: 2em;
         position: relative;
-        left:-80px;
-        h4{
+        left: -80px;
+
+        h4 {
             float: right;
         }
     }
@@ -231,15 +264,17 @@ li{
     .galImg {
         width: 400px;
         object-fit: cover;
-    
+
     }
 
     &:nth-child(even) {
         flex-direction: row-reverse;
-        .galDesc{
-            left: 100px;    
+
+        .galDesc {
+            left: 100px;
         }
     }
 }
 
-@import './madiaQueries.scss'; 
+
+@import './madiaQueries.scss';

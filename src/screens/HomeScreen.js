@@ -19,25 +19,27 @@ const HomeScreen = () => {
         <Box content='Logo' cls='logo'/>
         <Box content={intro} cls='intro padd'/>
         <Button className='box Btn' id='introBtn' onClick={onClickHandler}>See our work</Button>
-         </section> 
-
-         <section id='section-B'>
-         <Row >
+         </section>
+         </Container> 
+         <section className='paddT' id='section-B'>
+         <Container>
+         <Row id='cards'>
          {cards.map( card => (
         
-            <Card  key={card.title} className = 'box myCard'>
-             <Card.Body>
+            <Card key={card.title} className = 'box'>
+             <Card.Body className='myCard'>
                 <Card.Img variant='top' className='cardImg' src={card.image}/>
+                <div className='cardDesc'>
                 <Button className='box cardBtn'>{card.title}</Button>
                 <Card.Text>{card.desc}</Card.Text>
-                
+                </div>
             </Card.Body>
             </Card>
              
          ))}
          </Row>
-         </section>
          </Container>      
+         </section>
 
          <div className='background' id='out'>
          <Container>  

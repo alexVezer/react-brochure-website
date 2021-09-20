@@ -13,12 +13,13 @@ const ContactScreen = () => {
     return (
         <Fragment>
             <Header/>
-            <Container className='paddT'>
-            <Row>
+            <Container className='pageTitle'>
             <h2>Contact</h2>
-            </Row>
+            </Container>
+            <Container>
+                        
             <Row className='contact'>
-            <Col>
+            <Col md="5">
             <ul className='box adresa'>
             <li>
                 <h4>S.C. Logo S.R.L.</h4>
@@ -38,7 +39,7 @@ const ContactScreen = () => {
             </ul>
             </Col>
             
-            <Col className='paddT'>
+            <Col md="6" className='paddT'>
             
             <Map/>
             </Col>
@@ -46,7 +47,7 @@ const ContactScreen = () => {
             </Container>
             <Container className='padd'>
             <Row>
-            <button className=' box Btn' onClick={openFormHandler}>Trimite-ne un mesaj</button>
+            <button className='box Btn' onClick={openFormHandler}>Trimite-ne un mesaj</button>
             { openForm && (
 
                 <Form className="box padd">

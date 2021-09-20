@@ -1,15 +1,174 @@
-@media screen and (min-width: 990px){
-    // .galItem {
-    //     .galDesc{
-    //         left:-190px;
-    //     }
-    //     &:nth-child(even) {
-    //             .galDesc{
-    //                 left: 210px;    
-    //             }
-    //         }
+@import './mixins.scss';
 
-    // }
+@media screen and (max-width: 990px){
+    // Contact Page
+
+    ul {
+        left:15px;
+
+    }
+ 
+    .map {
+        height:60vh;
+        width: 45vw;
+    }
+
+    // HomeScreen styles
+
+    #section-B {
+        max-width: 100%;
+            
+    }
+
+    .card {
+        width: 80vw;
+        margin: 10px;
+       
+    }
+    .myCard {
+        @include FlexCenter(row);
+
+        .cardDesc {
+            @include FlexCenter(column);
+        }
+        .cardBtn {
+            top:-10px;
+            left:0px;
+        }
+        .card-text {
+            max-width: 70%;
+        }
+    }
+       
+}
+
+@media screen and (max-width: 830px) {
+
+    // HomeScreen styles
+
+    // Section A
+    #section-A {
+        top: 25%;
+    }
     
+    // Section B
+    #section-B {
+        max-width: 100%;
+            
+    }
+
+    .card {
+        width: 80vw;
+        margin: 10px;
+       
+    }
+    .myCard {
+        @include FlexCenter(row);
+
+        .cardDesc {
+            @include FlexCenter(column);
+        }
+        .cardBtn {
+            top:-10px;
+            left:0px;
+        }
+        .card-text {
+            max-width: 90%;
+        }
+    }
+
+    // Section-C
+
+    #out {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 755px) {
+    // Gallery styles
+    .container {
+        //@include FlexCenter(row);
+    }
+    #gallery {
+        //
+    }
+
+    .galItem {
+        max-width: 500px;
+        overflow: hidden;
+
+        .galDesc{
+            width: 80%;
+            //left:55px;
+            top: -65px;
+
+        }
+
+        .galImg{
+            width: 80vw;
+        }
     
+
+   
+}
+}
+
+@media screen and (max-width: 675px) {
+
+    // HomeScreen styles
+
+    // Section A
+ 
+    #section-A {
+        top: 15%;
+    }   
+
+ 
+    // Section B
+
+    #Section-B {
+        max-width: 100%;
+
+
+        
+    }
+
+    #cards {
+        @include FlexCenter(row);
+    }
+
+    .myCard {
+        @include FlexCenter(column);
+
+    }
+
+    // Page styles
+
+    #page {
+        top: 15%;
+    }
+
+    // Gallery styles
+
+    .galItem {
+        max-width: 500px;
+
+        .galDesc{
+            width: 80%;
+            left:55px;
+            top: -65px;
+
+        }
+
+        .galImg{
+            width: 90vw;
+        }
+    
+
+    &:nth-child(even) {
+        .galDesc {
+            left: 0px;
+        }
+    }
+}
 }

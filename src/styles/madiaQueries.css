@@ -1,2 +1,132 @@
+@media screen and (max-width: 990px) {
+  ul {
+    left: 15px;
+  }
 
-/*# sourceMappingURL=madiaQueries.css.map *//*# sourceMappingURL=madiaQueries.css.map */
+  .map {
+    height: 60vh;
+    width: 45vw;
+  }
+
+  #section-B {
+    max-width: 100%;
+  }
+
+  .card {
+    width: 80vw;
+    margin: 10px;
+  }
+
+  .myCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .myCard .cardDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .myCard .cardBtn {
+    top: -10px;
+    left: 0px;
+  }
+  .myCard .card-text {
+    max-width: 70%;
+  }
+}
+@media screen and (max-width: 830px) {
+  #section-A {
+    top: 25%;
+  }
+
+  #section-B {
+    max-width: 100%;
+  }
+
+  .card {
+    width: 80vw;
+    margin: 10px;
+  }
+
+  .myCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .myCard .cardDesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .myCard .cardBtn {
+    top: -10px;
+    left: 0px;
+  }
+  .myCard .card-text {
+    max-width: 90%;
+  }
+
+  #out {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 755px) {
+  .galItem {
+    max-width: 500px;
+    overflow: hidden;
+  }
+  .galItem .galDesc {
+    width: 80%;
+    top: -65px;
+  }
+  .galItem .galImg {
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 675px) {
+  #section-A {
+    top: 15%;
+  }
+
+  #Section-B {
+    max-width: 100%;
+  }
+
+  #cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .myCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #page {
+    top: 15%;
+  }
+
+  .galItem {
+    max-width: 500px;
+  }
+  .galItem .galDesc {
+    width: 80%;
+    left: 55px;
+    top: -65px;
+  }
+  .galItem .galImg {
+    width: 90vw;
+  }
+  .galItem:nth-child(even) .galDesc {
+    left: 0px;
+  }
+}/*# sourceMappingURL=madiaQueries.css.map */

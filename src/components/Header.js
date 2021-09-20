@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Header = () => {
     return (
         <Navbar className='box nBar' expand='md'>
-        <Container>
+        
             <Navbar.Brand href={`${process.env.PUBLIC_URL}/`}>Logo</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -16,7 +16,7 @@ const Header = () => {
                     <Link to={`${process.env.PUBLIC_URL}/contact`}>Contact</Link>
                 </Nav>
             </Navbar.Collapse>
-        </Container>       
+               
         </Navbar>
     )
 }

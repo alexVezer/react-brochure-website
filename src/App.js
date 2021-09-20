@@ -13,7 +13,7 @@ function App() {
     <Router>
     <Route path = {`${process.env.PUBLIC_URL}/contact`} component={ContactScreen}/>
     <Route path = {`${process.env.PUBLIC_URL}/galerie`} component={GalleryScreen}/>
-    <Route path = {`${process.env.PUBLIC_URL}/:page`} component={PageScreen} exact/>
+    <Route path = {`${process.env.PUBLIC_URL}/despre`} component={PageScreen}/>
     <Route path = {`${process.env.PUBLIC_URL}/`} component={HomeScreen} exact/>
     <Footer/>
     </Router>

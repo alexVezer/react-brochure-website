@@ -6,11 +6,8 @@ import data from '../data/data'
 import {useParams} from 'react-router-dom'
 
 const PageScreen = () => {
-    const {crtPage} = useParams()
+const { page } = data
 
-    const page = data.pages.find(({page}) => data.pages.link === crtPage)
-    console.log(page)
-    if( page!=='galerie' && page!=='contact') 
     return (
        
         <Fragment>

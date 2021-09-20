@@ -6,12 +6,12 @@ const Footer = () => {
     return (
         <footer className='box'>
         <div className="socialM">
-          <Link to=""><i className="fab fa-facebook-square"></i></Link>
-          <Link to=""><i className="fab fa-instagram"></i></Link>
-          <Link to=""><i className="fas fa-phone-square-alt"></i></Link>
-          <Link to=""><i className="fab fa-facebook-messenger"></i></Link>
+          <Link to="/fb"><i className="fab fa-facebook-square"></i></Link>
+          <Link to="/"><i className="fab fa-instagram"></i></Link>
+          <Link to="/"><i className="fas fa-phone-square-alt"></i></Link>
+          <Link to="/"><i className="fab fa-facebook-messenger"></i></Link>
         </div>  
-            <Nav>
+            <Nav className='fBar'>
                 <Link to={`${process.env.PUBLIC_URL}/servicii`}>Servicii</Link>
                 <Link to={`${process.env.PUBLIC_URL}/galerie`}>Galerie</Link>
                 <Link to={`${process.env.PUBLIC_URL}/despre`}>Despre noi</Link>
