@@ -11,7 +11,7 @@ const GalleryScreen = () => {
     return (
         <Fragment>
         <Header/>
-        <Container >   
+        <Container id='gall'>   
         <div className='paddT' id='gallery'>
         {
                 photos.map( photo => (

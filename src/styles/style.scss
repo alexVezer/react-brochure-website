@@ -11,8 +11,7 @@
 }
 
 .nBar {
-    padding-top: 0;
-    padding-bottom: 0;
+
     a {
         padding-right: 1em;
     }
@@ -52,6 +51,9 @@ section {
     position: relative;
 }
 
+#ab {
+    background-image: url(./img4.jpg);
+}
 .box {
     background-color: var(--primary--color);
     border: solid 1px var(--secondary--color);
@@ -144,6 +146,8 @@ section {
 
 }
 
+
+
 .card {
     width: 20vw;
     @include FlexCenter(column);
@@ -152,7 +156,6 @@ section {
 
 .myCard {
     margin: 10px;
-    @include FlexCenter(row);
 }
 
 
@@ -240,6 +243,7 @@ li {
     padding: 0.8em;
     list-style: none;
     border-bottom: 0.5px solid var(--dark--green);
+    text-align: center;
 }
 
 // Gallery

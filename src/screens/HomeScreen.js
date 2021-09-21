@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import { Button, Container, Card, Row, Col } from 'react-bootstrap'
 import Box from '../components/Box'
 import data from '../data/data.js'
+import { Link } from 'react-router-dom'
 
 const HomeScreen = () => {
     const {intro, out, cards} = data
@@ -18,8 +19,10 @@ const HomeScreen = () => {
         <section id='section-A'>
         <Box content='Logo' cls='logo'/>
         <Box content={intro} cls='intro padd'/>
-        <Button className='box Btn' id='introBtn' onClick={onClickHandler}>See our work</Button>
-         </section>
+        <Link to={`${process.env.PUBLIC_URL}/galerie`}>
+        <Button className='box Btn' id='introBtn' >See our work</Button>
+        </Link> 
+        </section>
          </Container> 
          <section className='paddT' id='section-B'>
          <Container>

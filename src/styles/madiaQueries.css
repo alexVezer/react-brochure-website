@@ -74,6 +74,13 @@
   #out {
     height: 100vh;
   }
+
+  ul {
+    left: 0;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
 }
 @media screen and (max-width: 755px) {
   .galItem {
@@ -86,6 +93,22 @@
   }
   .galItem .galImg {
     width: 80vw;
+  }
+
+  .contact {
+    width: 100vw;
+  }
+
+  ul {
+    left: 25px;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+
+  .map {
+    height: 60vh;
+    width: 40vw;
   }
 }
 @media screen and (max-width: 675px) {
@@ -115,18 +138,41 @@
     top: 15%;
   }
 
+  #gall {
+    max-width: 100%;
+  }
+
   .galItem {
-    max-width: 500px;
+    max-width: 100%;
+    margin: 0 10px;
   }
   .galItem .galDesc {
     width: 80%;
-    left: 55px;
+    left: 65px;
     top: -65px;
   }
   .galItem .galImg {
-    width: 90vw;
+    width: 80vw;
   }
   .galItem:nth-child(even) .galDesc {
-    left: 0px;
+    left: -15px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+  }
+
+  .map {
+    height: 80vh;
+    width: 90vw;
+  }
+
+  ul {
+    max-width: 90vw;
+    left: 0;
   }
 }/*# sourceMappingURL=madiaQueries.css.map */

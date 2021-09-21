@@ -19,7 +19,7 @@ const ContactScreen = () => {
             <Container>
                         
             <Row className='contact'>
-            <Col md="5">
+            <Col >
             <ul className='box adresa'>
             <li>
                 <h4>S.C. Logo S.R.L.</h4>
@@ -39,7 +39,7 @@ const ContactScreen = () => {
             </ul>
             </Col>
             
-            <Col md="6" className='paddT'>
+            <Col className='paddT'>
             
             <Map/>
             </Col>

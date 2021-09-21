@@ -12,7 +12,6 @@ const Footer = () => {
           <Link to="/"><i className="fab fa-facebook-messenger"></i></Link>
         </div>  
             <Nav className='fBar'>
-                <Link to={`${process.env.PUBLIC_URL}/servicii`}>Servicii</Link>
                 <Link to={`${process.env.PUBLIC_URL}/galerie`}>Galerie</Link>
                 <Link to={`${process.env.PUBLIC_URL}/despre`}>Despre noi</Link>
                 <Link to={`${process.env.PUBLIC_URL}/contact`}>Contact</Link>
