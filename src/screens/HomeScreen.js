@@ -31,7 +31,7 @@ const HomeScreen = () => {
         
             <Card key={card.title} className = 'box'>
              <Card.Body className='myCard'>
-                <Card.Img variant='top' className='cardImg' src={card.image}/>
+                <Card.Img variant='top' className='cardImg' src={`${process.env.PUBLIC_URL}${card.image}`}/>
                 <div className='cardDesc'>
                 <Button className='box cardBtn'>{card.title}</Button>
                 <Card.Text>{card.desc}</Card.Text>
